@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  height: 80px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.footer-container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

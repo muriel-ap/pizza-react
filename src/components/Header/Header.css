@@ -1,0 +1,14 @@
+.header-container {
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+    ),
+    url("https://as1.ftcdn.net/v2/jpg/02/29/73/28/1000_F_229732806_UnMDwlZUKZs8yYltp4ir9p0JwSWu7wLS.jpg");
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
