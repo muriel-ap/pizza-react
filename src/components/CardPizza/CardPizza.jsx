@@ -12,8 +12,8 @@ const CardPizza = ({ name, price, ingredients, img }) => {
       <hr />
       <p className="fs-4 fw-bold">Precio: ${price}</p>
       <div className="card-footer d-flex justify-content-between">
-        <button className="btn btn-outline-dark">Ver más</button>
-        <button className="btn btn-dark">Añadir</button>
+        <button className="btn btn-outline-dark">👀Ver más</button>
+        <button className="btn btn-dark">🛒Añadir</button>
       </div>
     </div>
   );
