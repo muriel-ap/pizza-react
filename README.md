@@ -4,9 +4,9 @@ Objetivo: Mostrar un menú de pizzas. Utilizando React y Bootstrap para el dise�
 
 ## 📝 Descripción
 
-- **Navbar (Barra de Navegación)**: 
+- **Navbar (Barra de Navegación)**:
   - Contiene opciones de navegación como "Home", "Profile", "Login", "Register" y "Logout".
-  - Muestra el total de la compra (simulado por el momento). 
+  - Muestra el total de la compra (simulado por el momento).
   - Los botones no tienen funcionalidad, solo se simula un **Token**.
 
 - **Home**: Página principal donde se visualizan los siguientes componentes:
@@ -16,3 +16,24 @@ Objetivo: Mostrar un menú de pizzas. Utilizando React y Bootstrap para el dise�
 - **Footer**: Pie de página con el mensaje de derechos reservados.
 
 ---
+
+# 💻 Hito 2 Módulo React: Pizzería Mama Mía.
+
+## 📝 Descripción
+
+- **Formulario de Registro**:
+  - se crea un formulario de registro que contiene Email, Password y Confirmación de Password.
+  Para que muestre un mensaje exitoso:
+  - Todas las casillas deben estar completas.
+  - El password debe contener más de 6 caracteres.
+  - El password y la confirmación de password deben ser iguales.
+  De lo contrario debe mostrarse un mensaje personalizado en cada una de las situaciones anteriores.
+
+- **Formulario de Login**:
+  - se crea un formulario de registro que contiene Email y Password .
+  Para que muestre un mensaje exitoso:
+  - Todas las casillas deben estar completas.
+  - El password debe contener más de 6 caracteres.
+    De lo contrario debe mostrarse un mensaje personalizado en cada una de las situaciones anteriores.
+
+
