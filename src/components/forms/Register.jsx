@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./forms.css";
+import "./Forms.css";
 
 const Register = () => {
   const [formulario, setFormulario] = useState({email: "", password: "", confirmPassword: "",});
