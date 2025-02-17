@@ -36,4 +36,26 @@ Objetivo: Mostrar un menú de pizzas. Utilizando React y Bootstrap para el dise�
   - El password debe contener más de 6 caracteres.
     De lo contrario debe mostrarse un mensaje personalizado en cada una de las situaciones anteriores.
 
+# 💻 Hito 3 Módulo React: Pizzería Mama Mía.
+
+## 📝 Descripción
+
+- **Home Pizzas**:
+   - Recorre el array de pizzas y renderiza un componente <CardPizza />.
+
+
+- **CardPizza**:
+  -Muestra la información de cada pizza utilizando props.
+  -Itera por la lista de ingredientes de cada pizza y renderiza un <li> por cada ingrediente.
+
+
+
+- **Carrito de Compra**:
+  - Se simula un carrito de compra tomando extrayendo objetos desde un array contenido en un archivo JS.
+  - Recorre el array de pizzaCart y muestra la información de cada pizza en el carrito.
+  - Agrega botones para aumentar y disminuir la cantidad de pizzas en el carrito.
+  - Calcula el total de la compra y muestra en el carrito.
+
+
+
 
