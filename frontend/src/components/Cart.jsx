@@ -55,7 +55,8 @@ const Cart = () => {
                 className="btn btn-outline-danger m-0"
                 onClick={() => changeCount(product.id, "decrease")}
               >
-                -
+                {" "}
+                -{" "}
               </button>
               <p className="m-0">{product.count}</p>
               <button
