@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import "./CardPizza.css";
 
 const CardPizza = ({ img, name, desc, price, ingredients }) => {
+  const precio = price?.toLocaleString("es-CL") || "No disponible";
+
   return (
     <div className="card">
       <img src={img} className="card-img-top" alt={name} />
@@ -15,20 +17,12 @@ const CardPizza = ({ img, name, desc, price, ingredients }) => {
           </li>
         ))}
       </ul>
-      <p className="card-price fs-4 fw-bold">Precio: ${price}</p>
+      <p className="card-price fs-4 fw-bold">Precio: ${precio}</p>
       <div className="card-footer">
         <button className="btn btn-dark">🛒Añadir</button>
       </div>
     </div>
   );
-};
-
-CardPizza.propTypes = {
-  name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  ingredients: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
 };
 
 export default CardPizza;
