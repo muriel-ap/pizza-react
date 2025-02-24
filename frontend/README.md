@@ -57,5 +57,16 @@ Objetivo: Mostrar un menú de pizzas. Utilizando React y Bootstrap para el dise�
   - Calcula el total de la compra y muestra en el carrito.
 
 
+# 💻 Hito 4 Módulo React: Pizzería Mama Mía.
 
+## 📝 Descripción
+
+Manejo del estado en React utilizando useState y useEffect para realizar peticiones asincrónicas a una API de pizzas. El objetivo fue obtener y mostrar los detalles de las pizzas, incluidos los ingredientes y el precio.
+
+- **Home.jsx**:
+   - Recorre el array de pizzas obteniendo datos de Api cargado en el backend  y renderiza un componente <CardPizza />.
+
+
+- **Pizza.jsx**:
+  - Recorre el array de una pizza obteniendo datos de Api cargado en el backend y renderiza.
 
