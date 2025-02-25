@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const API_URL = "http://localhost:5000/api/pizzas/p001";
 const Pizza = () => {
-  const [pizza, setPizza] = useState([null]);
+  const [pizza, setPizza] = useState([]);
 
   const fetchPizza = async () => {
     try {
