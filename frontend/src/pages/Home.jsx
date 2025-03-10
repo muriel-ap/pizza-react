@@ -1,3 +1,4 @@
+import { useCartCont } from "../components/context/CartContext";
 import { useEffect, useState } from "react";
 import CardPizza from "../components/CardPizza/CardPizza";
 import Header from "../components/Header/Header";
@@ -6,6 +7,7 @@ const API_URL = "http://localhost:5000/api/pizzas";
 
 const Home = () => {
   const [pizzas, setPizzas] = useState([]);
+  const { addToCart } = useCartCont();
 
   const fetchPizzas = async () => {
     try {
@@ -28,11 +30,13 @@ const Home = () => {
         {pizzas.map((pizza) => (
           <div className="col-md-4" key={pizza.id}>
             <CardPizza
+              id={pizza.id}
               name={pizza.name}
               price={pizza.price}
               img={pizza.img}
               desc={pizza.desc}
               ingredients={pizza.ingredients}
+              addToCart={addToCart}
             />
           </div>
         ))}
