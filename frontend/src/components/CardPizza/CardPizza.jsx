@@ -1,7 +1,6 @@
-import PropTypes from "prop-types";
 import "./CardPizza.css";
 
-const CardPizza = ({ img, name, desc, price, ingredients }) => {
+const CardPizza = ({ id, img, name, desc, price, ingredients, addToCart }) => {
   const precio = price?.toLocaleString("es-CL") || "No disponible";
 
   return (
@@ -19,7 +18,13 @@ const CardPizza = ({ img, name, desc, price, ingredients }) => {
       </ul>
       <p className="card-price fs-4 fw-bold">Precio: ${precio}</p>
       <div className="card-footer">
-        <button className="btn btn-dark">🛒Añadir</button>
+        <button
+          className="btn btn-dark"
+          onClick={() => addToCart({ id, name, price, img, count: 1 })} // Aseguramos el formato correcto
+        >
+          {" "}
+          🛒Añadir{" "}
+        </button>
       </div>
     </div>
   );
