@@ -86,3 +86,18 @@ cart, entre otros.
  - La ruta “/pizza/p001” debe mostrar el componente Pizza.
  - La ruta “/profile” debe mostrar un componente Profile.
  - La ruta “/404” debe mostrar un componente NotFound.
+
+ # 💻 Hito 6 Módulo React: Pizzería Mama Mía.
+
+## 📝 Descripción
+
+Implementación del manejo de estado global en la aplicación web
+utilizando Context API.
+
+- **Rutas necesarias para los componentes:**
+ - Implementa un Context para manejar el carrito de compras.
+ - Muestra el precio total del carrito en el Navbar usando el Cart Context.
+ - Permite agregar productos al carrito desde Home con el botón "Añadir".
+ - Muestra los productos en la página Cart y permite agregar/eliminar productos.
+ - Calcula y muestra el total de la compra en Cart, sincronizado con el Navbar.
+ - Opcional: Mueve el fetch de pizzas a un Context..
