@@ -94,7 +94,6 @@ cart, entre otros.
 Implementación del manejo de estado global en la aplicación web
 utilizando Context API.
 
-- **Rutas necesarias para los componentes:**
  - Implementa un Context para manejar el carrito de compras.
  - Muestra el precio total del carrito en el Navbar usando el Cart Context.
  - Permite agregar productos al carrito desde Home con el botón "Añadir".
