@@ -1,19 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.navbar-container {
-  height: 80px;
+html, body {
+  height: 100vh;  /* Esto asegura que la altura del body ocupe todo el alto de la pantalla */
+  margin: 0;
+}
+.navigation {
+  height: 66px;
+}
+.page {
+  min-height: calc(100vh - 60px - 45px);
   display: flex;
-  justify-content:space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
-.footer-container {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer {
+  height: 45px;
 }
