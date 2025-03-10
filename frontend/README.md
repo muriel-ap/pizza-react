@@ -70,3 +70,19 @@ Manejo del estado en React utilizando useState y useEffect para realizar peticio
 - **Pizza.jsx**:
   - Recorre el array de una pizza obteniendo datos de Api cargado en el backend y renderiza.
 
+# 💻 Hito 5 Módulo React: Pizzería Mama Mía.
+
+## 📝 Descripción
+
+Implementación del enrutamiento con lo aprendido hasta el momento en React Router.
+El sistema de enrutamiento responderá a una vista index, a los componentes register, login,
+cart, entre otros.
+
+- **Rutas necesarias para los componentes:**
+ - La ruta “/” debe mostrar el componente Home.
+ - La ruta “/register” debe mostrar el componente Register.
+ - La ruta “/login” debe mostrar el componente Login.
+ - La ruta “/cart” debe mostrar el componente Cart.
+ - La ruta “/pizza/p001” debe mostrar el componente Pizza.
+ - La ruta “/profile” debe mostrar un componente Profile.
+ - La ruta “/404” debe mostrar un componente NotFound.
