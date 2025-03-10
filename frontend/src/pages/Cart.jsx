@@ -1,36 +1,23 @@
-import { useState } from "react";
-import { pizzaCart } from "../data/Pizzas";
+import { useCartCont } from "../components/context/CartContext";
 
 const Cart = () => {
-  const [cart, setCart] = useState(pizzaCart);
+  const { cart, addToCart, removeFromCart, getTotal } = useCartCont();
 
   const changeCount = (id, action) => {
-    setCart(
-      cart
-        .map((product) =>
-          product.id === id
-            ? {
-                ...product,
-                count: product.count + (action === "increase" ? 1 : -1),
-              }
-            : product
-        )
-        .filter((product) => product.count > 0)
-    );
-  };
+    const product = cart.find((product) => product.id === id);
+    if (!product) return;
 
-  const calculateTotal = () => {
-    return cart.reduce(
-      (total, product) => total + product.price * product.count,
-      0
-    );
+    if (action === "increase") {
+      addToCart({ ...product, count: +1 });
+    } else if (action === "decrease" && product.count > 1) {
+      addToCart({ ...product, count: -1 });
+    } else if (product.count === 1) {
+      removeFromCart(id);
+    }
   };
 
   return (
-    <div
-      className="container d-flex flex-column justify-content-center w-50"
-      style={{ minHeight: "100vh" }}
-    >
+    <div className="container d-flex flex-column justify-content-center w-50 mt-5">
       <div className="row list-cart d-flex flex-column gap-5 align-items-center">
         <h2>Detalles del pedido:</h2>
         {cart.map((product) => (
@@ -70,7 +57,7 @@ const Cart = () => {
         ))}
       </div>
       <div className="my-5">
-        <h3>Total: ${calculateTotal().toLocaleString("es-CL")}</h3>
+        <h3>Total: ${getTotal().toLocaleString("es-CL")}</h3>
         <button className="btn btn-dark m-0">pagar</button>
       </div>
     </div>
