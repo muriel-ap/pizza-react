@@ -1,33 +1,28 @@
-const Navbar = () => {
-  const total = 25000;
-  const token = false;
+import { Link } from "react-router-dom";
+import { Navbar, Nav, Container } from "react-bootstrap";
+
+const Navigation = () => {
 
   return (
-    <nav className="navbar-container navbar-expand-lg navbar-dark bg-dark px-4">
-      <div className="d-flex justify-content-start align-items-center gap-3">
-        <a className="navbar-brand fs-3" href="#home">
-          Pizzería Mama Mía
-        </a>
-        <button className="btn btn-outline-light">🍕 Home</button>
-
-        {token ? (
-          <>
-            <button className="btn btn-outline-light">🔓 Profile</button>
-            <button className="btn btn-outline-light">🔒 Logout</button>
-          </>
-        ) : (
-          <>
-            <button className="btn btn-outline-light">🔐 Login</button>
-            <button className="btn btn-outline-light">🔐 Register</button>
-          </>
-        )}
-      </div>
-
-      <button className="btn btn-outline-info">
-        🛒 Total: ${total.toLocaleString()}
-      </button>
-    </nav>
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          🍕 Pizzería Mamma Mía
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/register">🔐Registro</Nav.Link>
+            <Nav.Link as={Link} to="/login">🔐Login</Nav.Link>
+            <Nav.Link as={Link} to="/profile">🔓Perfil</Nav.Link>
+            <Nav.Link as={Link} to="/cart" className="fw-bold text-warning">
+              🛒 Total: $
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Navigation;
